@@ -29,6 +29,7 @@ module.exports = {
     'no-underscore-dangle': 'off',
     camelcase: 'off',
     'no-console': ['error', { allow: ['tron'] }],
+    'react/jsx-props-no-spreading': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
   },
