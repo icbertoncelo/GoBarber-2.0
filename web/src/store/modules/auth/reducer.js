@@ -8,13 +8,23 @@ const INITIAL_STATE = {
 };
 
 export default function auth(state = INITIAL_STATE, action) {
-  switch (action.type) {
-    case AuthTypes.SIGN_SUCCESS:
-      return produce(state, draft => {
+  return produce(state, draft => {
+    switch (action.type) {
+      case AuthTypes.SIGN_REQUEST: {
+        draft.loading = true;
+        break;
+      }
+      case AuthTypes.SIGN_SUCCESS: {
         draft.token = action.payload.token;
         draft.signed = true;
-      });
-    default:
-      return state;
-  }
+        draft.loading = false;
+        break;
+      }
+      case AuthTypes.SIGN_FAILURE: {
+        draft.loading = false;
+        break;
+      }
+      default:
+    }
+  });
 }
