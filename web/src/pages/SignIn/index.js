@@ -4,7 +4,7 @@ import { Form, Input } from '@rocketseat/unform';
 import * as Yup from 'yup';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { signRequest } from '~/store/modules/auth/actions';
+import { signInRequest } from '~/store/modules/auth/actions';
 
 import logo from '~/assets/logo.svg';
 
@@ -20,7 +20,7 @@ export default function SignIn() {
   const loading = useSelector(state => state.auth.loading);
 
   function handleSubmit({ email, password }) {
-    dispatch(signRequest(email, password));
+    dispatch(signInRequest(email, password));
   }
 
   return (

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import api from '~/services/api';
 import history from '~/services/history';
 
-import { Types as AuthTypes, signSuccess, signFailure } from './actions';
+import { Types as AuthTypes, signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
   try {
@@ -22,7 +22,7 @@ export function* signIn({ payload }) {
       return;
     }
 
-    yield put(signSuccess(token, user));
+    yield put(signInSuccess(token, user));
 
     history.push('/dashboard');
   } catch (err) {
@@ -31,4 +31,26 @@ export function* signIn({ payload }) {
   }
 }
 
-export default all([takeLatest(AuthTypes.SIGN_REQUEST, signIn)]);
+export function* signUp({ payload }) {
+  try {
+    const { name, email, password } = payload;
+
+    yield call(api.post, 'users', {
+      name,
+      email,
+      password,
+      provider: true,
+    });
+
+    history.push('/');
+  } catch (err) {
+    toast.error('Registration failed. Please verify your data');
+
+    put(signFailure());
+  }
+}
+
+export default all([
+  takeLatest(AuthTypes.SIGN_IN_REQUEST, signIn),
+  takeLatest(AuthTypes.SIGN_UP_REQUEST, signUp),
+]);
