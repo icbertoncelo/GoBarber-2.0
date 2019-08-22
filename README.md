@@ -5,7 +5,7 @@ This is an app to appointments of a barber shop. The site is only for providers 
 <!-- Login -->
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/images/signIn.png" alt="SignIn" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/web/images/signIn.png" alt="SignIn" width="600" height="300">
 
   <h3 align="center">Login screen</h3>
 </p>
@@ -13,7 +13,7 @@ This is an app to appointments of a barber shop. The site is only for providers 
 <!-- Register -->
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/images/signUp.png" alt="SignUp" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/web/images/signUp.png" alt="SignUp" width="600" height="300">
 
   <h3 align="center">Register screen</h3>
 </p>
@@ -23,7 +23,7 @@ Only providers are be able to register and use the web app.
 <!-- Dashboard -->
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/images/dashboard.png" alt="Dashboard" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/web/images/dashboard.png" alt="Dashboard" width="600" height="300">
 
   <h3 align="center">Dashboard screen</h3>
 </p>
@@ -33,7 +33,7 @@ The provider can check your schedule all days and when a user schedules a time, 
 <!-- Profile -->
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/images/profile.png" alt="Profile" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/web/images/profile.png" alt="Profile" width="600" height="300">
 
   <h3 align="center">Profile screen</h3>
 </p>
