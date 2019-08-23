@@ -30,7 +30,6 @@ export default function SignUp({ navigation }) {
           <FormInput
             icon="person-outline"
             autoCorrect={false}
-            autoCaptalize="none"
             placeholder="Complete name"
             returnKeyType="next"
             onSubmitEditing={() => emailRef.current.focus()}
@@ -40,7 +39,7 @@ export default function SignUp({ navigation }) {
             icon="mail-outline"
             keyboardType="email-address"
             autoCorrect={false}
-            autoCaptalize="none"
+            autoCapitalize="none"
             placeholder="Email"
             ref={emailRef}
             returnKeyType="next"

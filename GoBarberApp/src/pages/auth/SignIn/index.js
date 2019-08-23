@@ -30,7 +30,7 @@ export default function SignIn({ navigation }) {
             icon="mail-outline"
             keyboardType="email-address"
             autoCorrect={false}
-            autoCaptalize="none"
+            autoCapitalize="none"
             placeholder="Email"
             returnKeyType="next"
             onSubmitEditing={() => emailRef.current.focus()}
@@ -43,7 +43,6 @@ export default function SignIn({ navigation }) {
             ref={emailRef}
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
-            // blurOnSubmit={false}
           />
 
           <SubmitButton onPress={() => {}}>Access</SubmitButton>
