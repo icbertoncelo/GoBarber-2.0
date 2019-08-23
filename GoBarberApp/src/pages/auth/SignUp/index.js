@@ -1,7 +1,9 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { Image } from 'react-native';
+import { signUpRequest } from '~/store/modules/auth/actions';
 
 import {
   Container,
@@ -16,10 +18,20 @@ import Background from '~/components/Background';
 import logo from '~/assets/logo.png';
 
 export default function SignUp({ navigation }) {
+  const dispatch = useDispatch();
+
+  const loading = useSelector(state => state.auth.loading);
+
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  function handleSubmit() {}
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  function handleSubmit() {
+    dispatch(signUpRequest(name, email, password));
+  }
 
   return (
     <Background>
@@ -34,6 +46,8 @@ export default function SignUp({ navigation }) {
             returnKeyType="next"
             onSubmitEditing={() => emailRef.current.focus()}
             blurOnSubmit={false}
+            value={name}
+            onChangeText={setName}
           />
           <FormInput
             icon="mail-outline"
@@ -45,6 +59,8 @@ export default function SignUp({ navigation }) {
             returnKeyType="next"
             onSubmitEditing={() => passwordRef.current.focus()}
             blurOnSubmit={false}
+            value={email}
+            onChangeText={setEmail}
           />
           <FormInput
             icon="lock-outline"
@@ -53,9 +69,13 @@ export default function SignUp({ navigation }) {
             ref={passwordRef}
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
+            value={password}
+            onChangeText={setPassword}
           />
 
-          <SubmitButton onPress={() => {}}>Create account</SubmitButton>
+          <SubmitButton loading={loading} onPress={handleSubmit}>
+            Create account
+          </SubmitButton>
         </Form>
 
         <SignLink onPress={() => navigation.navigate('SignIn')}>
