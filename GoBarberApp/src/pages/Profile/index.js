@@ -90,7 +90,7 @@ export default function Profile() {
           <FormInput
             icon="lock-outline"
             secureTextEntry
-            placeholder="Password"
+            placeholder="Old password"
             ref={oldPasswordRef}
             returnKeyType="next"
             onSubmitEditing={() => passwordRef.current.focus()}
@@ -112,7 +112,7 @@ export default function Profile() {
           <FormInput
             icon="lock-outline"
             secureTextEntry
-            placeholder="Password"
+            placeholder="Confirm password"
             ref={confirmPasswordRef}
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
