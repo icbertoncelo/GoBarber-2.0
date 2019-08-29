@@ -39,3 +39,34 @@ The provider can check your schedule all days and when a user schedules a time, 
 </p>
 
 This screen allows the provider update your data.
+
+## Mobile Application
+
+The app is available only to users.
+
+<br />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/sign.png" alt="Sign" width="600" height="300">
+
+  <h3 align="center">SignIn and SignUp screens</h3>
+</p>
+
+These screen allows the user to register and access the app.
+
+<br />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/dashboard.png" alt="Dashboard" width="600" height="300">
+
+  <h3 align="center">Dashboard and Profile screens</h3>
+</p>
+
+The user can check your appointments in the dashboard screen, moreover he can update his data and log out of app in profile screen.
+
+<br />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/schedule.png" alt="Schedule" width="600" height="300">
+
+  <h3 align="center">Schedule screens</h3>
+</p>
+
+This screen is the step by step for scheduling.
