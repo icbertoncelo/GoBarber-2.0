@@ -1,10 +1,10 @@
 import Redis from 'ioredis';
+import redisConfig from '../config/redis';
 
 class Cache {
   constructor() {
     this.redis = new Redis({
-      host: process.env.REDIS_HOST,
-      port: process.env.REDIS_PORT,
+      redisConfig,
       keyPrefix: 'cache:',
     });
   }
