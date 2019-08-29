@@ -46,7 +46,7 @@ The app is available only to users.
 
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/sign.png" alt="Sign" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/sign.png" alt="Sign" width="420" height="300">
 
   <h3 align="center">SignIn and SignUp screens</h3>
 </p>
@@ -55,7 +55,7 @@ These screen allows the user to register and access the app.
 
 <br />
 <p align="center">
-  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/dashboard.png" alt="Dashboard" width="600" height="300">
+  <img src="https://raw.githubusercontent.com/icbertoncelo/GoBarber-2.0/master/GoBarberApp/images/dashboard.png" alt="Dashboard" width="420" height="300">
 
   <h3 align="center">Dashboard and Profile screens</h3>
 </p>
